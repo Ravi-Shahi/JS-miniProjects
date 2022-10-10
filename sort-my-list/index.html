@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort-IT</title>
+    <link rel="icon" href="icons/sort-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="flexbox-container">
+        <div class="flex-item title">
+            <h1 class="title-heading">Mini Project</h1>
+            <h3 class="sub-heading">Sort List!</h3>
+            <p>Rule's to follow:</p>
+            <ul>
+                <li>Separate words with ',' </li>
+                <li>Uppercase will be sorted before lower case example: a,A,c,C => A,C,a,c</li>
+            </ul>
+
+        </div>
+        <div class="flex-item card">
+            <h2>Unsorted</h2>
+            <textarea id="unsortedList" class="usort-list"></textarea>
+            <input type="button" id="sort-btn" value="Sort" class="btn">
+        </div>
+        <div class="flex-item card">
+            <h2>Sorted</h2>
+            <textarea id="sortedList" class="sort-list" readonly></textarea>
+            <input type="button" id="clear-btn" value="clear" class="btn">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
